@@ -17,6 +17,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'accounts',
+    'helpdesk',
 ]
 
 MIDDLEWARE = [
@@ -79,3 +82,9 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+
+AUTH_USER_MODEL = 'accounts.User'
+ADMIN_MODEL = 'accounts.Administrator'
+CUSTOMER_MODEL = 'accounts.Customer'
+
+FILE_ROOT = os.path.join(BASE_DIR, 'attachments')
