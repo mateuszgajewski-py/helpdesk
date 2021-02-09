@@ -72,7 +72,7 @@ def file_path(instance, filename):
 	return f'ticket_{instance.id}/{filename}'
 
 
-class TicketFiles(models.Model):
+class TicketFile(models.Model):
 	ticket = models.ForeignKey(
 		to=Ticket,
 		verbose_name='Zgłoszenie',

@@ -3,7 +3,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('DJANGO_HELPDESK_SECRET_KEY')
+SECRET_KEY = os.environ.get('HELPDESK_SECRET_KEY')
 
 DEBUG = True
 
@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'accounts',
-    'helpdesk',
+    'helpdesk_app',
 ]
 
 MIDDLEWARE = [
